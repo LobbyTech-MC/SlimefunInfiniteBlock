@@ -66,7 +66,7 @@ public class CombinedBlock extends CustomSlimefunItem implements NotDupeable {
     public static void generateParticle(@NotNull Location location) {
         // /particle minecraft:firework ~ ~0.5 ~ 0 0 0 0.1 30
         location.getWorld().spawnParticle(
-                Particle.FIREWORKS_SPARK,
+                Particle.FIREWORK,
                 location.clone().add(0.5, 0.5, 0.5),
                 10,
                 0, 0, 0,

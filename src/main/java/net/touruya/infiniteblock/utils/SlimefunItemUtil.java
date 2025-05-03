@@ -42,9 +42,11 @@ public class SlimefunItemUtil {
     }
 
     public static void unregisterAllItemGroups() {
+    	
         for (ItemGroup itemGroup : Slimefun.getRegistry().getAllItemGroups()) {
-            if (itemGroup.getAddon() instanceof InfiniteBlocks) {
-                unregisterItemGroup(itemGroup);
+        	ItemGroup itemGroupToRemove = itemGroup;
+            if (itemGroupToRemove.getAddon() instanceof InfiniteBlocks) {
+                unregisterItemGroup(itemGroupToRemove);
             }
         }
     }
